@@ -119,32 +119,3 @@ or
 public static boolean booleanExpression(boolean a, boolean b, boolean c, boolean d) {
 return ((a != b) && (c != d)) || ((a != c) && (b != d));
 }
-Вывод:
-System.out.println("Hello world! \n"); //ln - переводит строку; \n - также переводит строку.
-System.out.println("Bye world...");
-
-int x=5;
-int y=6;
-System.out.println("x=" + x + "; y=" + y);
-
-int x=5;
-int y=6;
-System.out.printf("x=%d; y=%d \n", x, y); 
-%x: для вывода шестнадцатеричных чисел
-%f: для вывода чисел с плавающей точкой
-%e: для вывода чисел в экспоненциальной форме, например, 1.3e+01
-%c: для вывода одиночного символа
-%s: для вывода строковых значений
-
-public class Program {
-   
-    public static void main(String[] args) {
-           
-        String name = "Tom";
-        int age = 30;
-        float height = 1.7f;
-          
-        System.out.printf("Name: %s  Age: %d  Height: %.2f \n", name, age, height); //При выводе чисел с плавающей точкой мы можем указать количество знаков после запятой, %.2f;
-    }
-}
-Ввод:
