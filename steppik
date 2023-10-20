@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Programm
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Input year: ");
+        int year = in.nextInt();
+        int x1 = year / 4;
+        int x2 = year / 100;
+        int x3 = year / 400;
+        year = x1-x2+x3;
+        System.out.printf("vivod: %d, \n", year);
+        in.close();
+    }
+}
