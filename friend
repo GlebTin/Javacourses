@@ -1,0 +1,71 @@
+import.java.util.Calendar;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        boolean error = false;
+        if(args.lengh == 0)
+        {
+            System.out.println(
+                "Привет \n"+
+                "Запусти меня с "\help\""+
+                "qweq ;)"
+            );
+        }
+        else if (args.lengh == 1)
+        {
+            if(args[0].equals("help"))
+            {
+                System.out.println(
+                    "Я умею отвечать на простые вопросы. \n"+
+                    "Чтобы увдиеть мой ответ, напиши в кавычках \n"+
+                    "любую фразу или вопрос из следующего списка: \n"+
+                    "- \"Привет!\"\n"+
+                    "- \"как дела?\"\n"+
+                    "- \"как настроение?\"\n"+
+                    "- \"чем занимаешься?\"\n"+
+                    "- \"Почему не спишь?\"\n"+
+                );
+            }
+            else if(args[0].equals("Привет!"))
+            {
+                Calendar calendar = Calendar.getInstance();
+                int hour = calendar.get(Calendar.Hour_OF_DAY);
+                if(hour < 12) {
+                    System.out.println("Доброе утро!");
+                } else if(hour >= 12 && hour <= 18){
+                    System.out.println("Добрый день!");
+                } else {
+                    System.out.println("Добрый вечер!");
+                }
+                }
+            else if(args[0].equals("как дела?")){
+                System.out.println("Хорошо, спасибо!");
+            }
+            else if(args[0].equals("как настроение?")){
+                System.out.println("Супер!");
+            }
+            else if(args[0].equals("чем занимаешься?")){
+                System.out.println("Настю развлекаю");
+            }
+            else if(args[0].equals("Почему не спишь?")){
+                System.out.println("Пиши код!");
+            }
+            else {
+                error = true;
+            }
+            }
+        else {
+            error = true;
+        }
+        if(error)
+        {
+            System.out.println("Прости, я не поняла, что ты меня спрашиваешь не правильно! \n"+
+            "Спроси меня правильно. Вот примеры: \n" +
+            "java -jar friend.jar help\n"+
+            "java -jar friend.jar \"чем занимаешься?\"\n"+
+            "java -jar friend.jar \"Почему не спишь?\"\n");
+        }
+        }
+    }
+}
