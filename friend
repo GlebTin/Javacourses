@@ -1,18 +1,18 @@
-import.java.util.Calendar;
+import java.util.Calendar;
 public class Main
 {
     public static void main(String[] args)
     {
         boolean error = false;
-        if(args.lengh == 0)
+        if(args.length == 0)
         {
             System.out.println(
                 "Привет \n"+
-                "Запусти меня с "\help\""+
-                "qweq ;)"
+                "Запусти меня с \"help\",\n"+
+                "кусок ты говна;)"
             );
         }
-        else if (args.lengh == 1)
+        else if(args.length == 1)
         {
             if(args[0].equals("help"))
             {
@@ -24,13 +24,12 @@ public class Main
                     "- \"как дела?\"\n"+
                     "- \"как настроение?\"\n"+
                     "- \"чем занимаешься?\"\n"+
-                    "- \"Почему не спишь?\"\n"+
-                );
+                    "- \"Почему не спишь?\"\n");
             }
             else if(args[0].equals("Привет!"))
             {
                 Calendar calendar = Calendar.getInstance();
-                int hour = calendar.get(Calendar.Hour_OF_DAY);
+                int hour = calendar.get(Calendar.HOUR_OF_DAY);
                 if(hour < 12) {
                     System.out.println("Доброе утро!");
                 } else if(hour >= 12 && hour <= 18){
@@ -60,7 +59,7 @@ public class Main
         }
         if(error)
         {
-            System.out.println("Прости, я не поняла, что ты меня спрашиваешь не правильно! \n"+
+            System.out.println("Прости, я не поняла, ты меня спрашиваешь не правильно! \n"+
             "Спроси меня правильно. Вот примеры: \n" +
             "java -jar friend.jar help\n"+
             "java -jar friend.jar \"чем занимаешься?\"\n"+
@@ -68,4 +67,3 @@ public class Main
         }
         }
     }
-}
