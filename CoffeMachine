@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        //System.out.println("Выберите напиток");
+        Scanner in = new Scanner(System.in);
+        System.out.print("Добавьте денежные средства");
+        int moneyAmount = in.nextInt();
+        int cappucinoPrice = 180;
+        int lattePrice = 120;
+        int espressoPrice = 80;
+        int chocolatePrice = 20;
+        boolean isMilkEnough = true;
+        boolean canBuyAnything = false;
+        boolean moneyEnoughForCappucino = moneyAmount >= cappucinoPrice;
+        if (moneyEnoughForCappucino && isMilkEnough == true) {
+            System.out.println("Вы можете купить капучино.");
+            canBuyAnything = true;
+        }
+        if (moneyAmount >= lattePrice && isMilkEnough == true) {
+            System.out.println("Вы можете купить латте.");
+            canBuyAnything = true;
+        }
+        if (moneyAmount >= espressoPrice) {
+            System.out.println("Вы можете купить эспрессо.");
+            canBuyAnything = true;
+        }
+        if (moneyAmount >= chocolatePrice) {
+            System.out.println("Вы можете купить шоколад.");
+            canBuyAnything = true;
+        }
+        if (canBuyAnything = false){
+            System.out.println("недостаточно средств.");
+        }
+    }
+}
