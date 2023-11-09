@@ -1,0 +1,20 @@
+public class Main{
+    public static void main(String[] args){
+        int i = 200;
+        /*for(i = 200;i <= 210; i++){
+        System.out.printf("Tickets = " + i +"\n");
+        }
+         for(i = 240;i <= 250; i++){
+        System.out.printf("Tickets = " + i +"\n");
+        }*/
+        while (i >= 200 && i < 210 ){
+            i++;
+            System.out.printf("Tickets = " + i +"\n");
+        }
+        i = 240;
+        while (i >= 240 && i < 250 ){
+            i++;
+            System.out.printf("Tickets = " + i +"\n");
+        }
+    }
+}
