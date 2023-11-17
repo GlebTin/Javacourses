@@ -1,3 +1,4 @@
+// Задание 1.1
 /*import java.util.Scanner;
 public class Main
 {
@@ -16,7 +17,10 @@ public class Main
 	    }
 	}
 }*/
-/*public class Main
+
+// Задание 1.2
+/*import java.util.Scanner;
+public class Main
 {
 	public static void main(String[] args) 
 	{
@@ -33,8 +37,8 @@ public class Main
 	    }
 	}
 }*/
+// Задание 1.3
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -56,5 +60,5 @@ public class Main {
         }
     }
 }
-Является ли полсдовательность [( ( ( ) ) ( ) ( ( ) ) ]] - правильной?
-Нет, по-моему мнению, правильная последовательность должна выглядеть так: [[( ( ( ) )) ( ) ( ( ) ) ]]
+//Является ли полсдовательность [( ( ( ) ) ( ) ( ( ) ) ]] - правильной?
+//Нет, по-моему мнению, правильная последовательность должна выглядеть так: [[( ( ( ) )) ( ) ( ( ) ) ]]
